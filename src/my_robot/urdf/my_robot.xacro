@@ -131,14 +131,14 @@
       </geometry>
     </collision>
 
-    <visual name='left_wheel_visual'>
+    <visual> <!--I chage this to obtain the color <visual name='left_wheel_visual'> -->
       <origin xyz="0.0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
     </visual>
   </link>
-
+  
   <!--right_wheel model-->
   <link name='side_wheel_right'>
     <pose>0 0 0.1 0 0 0</pose>
@@ -159,7 +159,7 @@
       </geometry>
     </collision>
 
-    <visual name='right_wheel_visual'>
+    <visual> <!--I chage this to obtain the color <visual name='right_wheel_visual'> -->
       <origin xyz="0.0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
@@ -188,7 +188,7 @@
       </geometry>
     </collision>
 
-    <visual name='camera_visual'>
+    <visual name='camera_visual'> <!--I chage this to obtain the color <<visual name='camera_visual'> -->
       <origin xyz="0.0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
         <box size=".05 .05 .05"/>
@@ -210,14 +210,14 @@
       />
     </inertial>
 
-    <collision name='camera_collision'>
+    <collision name='lidar_collision'>
       <origin xyz="0.0 0 0" rpy=" 0 0 0"/> 
       <geometry>
         <box size=".1 .1 .1"/>
       </geometry>
     </collision>
 
-    <visual name='camera_visual'>
+    <visual name='lidar_visual'>
       <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
       <geometry>
         <mesh filename ="package://my_robot/meshes/hokuyo.dae"/>

@@ -1,5 +1,23 @@
 <?xml version="1.0"?>
 <robot>
+
+  <!--Adding colors to the pieces--> 
+  <gazebo reference="chassis">
+    <material>Gazebo/Green</material>
+  </gazebo>
+  
+  <gazebo reference="side_wheel_left">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="side_wheel_right">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="camera">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
   <!--Wheels plugin-->
   <gazebo>
     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
