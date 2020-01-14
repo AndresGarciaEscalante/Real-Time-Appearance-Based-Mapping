@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-
+<!--Xacro is an XML macro language. With xacro, you can construct shorter and more readable XML files by using macros that expand to larger XML expressions.-->
 <robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <link name="robot_footprint"></link>
