@@ -39,7 +39,7 @@ void process_image_callback(const sensor_msgs::Image img)
         if(pos < 266){ // Go_left
             ROS_INFO_STREAM("Robot Going Left");
             linear_vel_x = 0.0;
-            angular_vel_z = 0.5;
+            angular_vel_z = 1.5;
             drive_robot(linear_vel_x,angular_vel_z);
         }
         else if(pos >= 266 && pos < 533){ // Go_fordwards
@@ -52,7 +52,7 @@ void process_image_callback(const sensor_msgs::Image img)
         else { // Go_right
             ROS_INFO_STREAM("Robot Going right");
             linear_vel_x = 0.0;
-            angular_vel_z = -0.5;
+            angular_vel_z = -1.5;
             drive_robot(linear_vel_x,angular_vel_z);
         }
     }
