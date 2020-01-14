@@ -3,7 +3,7 @@
 
   <!--Adding colors to the pieces--> 
   <gazebo reference="chassis">
-    <material>Gazebo/Green</material>
+    <material>Gazebo/Black</material>
   </gazebo>
   
   <gazebo reference="side_wheel_left">
