@@ -43,8 +43,10 @@ $ roslaunch ball_chaser ball_chaser.launch
 ### Gazebo world
 The gazebo world was already created in a previous project. Please refer to:
 
+[Gazabo_World](https://github.com/AndresGarciaEscalante/My_Gazebo_World)
+
 ### Unified Robot Description Format (URDF)
-This file provided all the information about the ```my_robot``` structrure ```Links, joints,and physics properties``` for the gazebo environment. Additionally, the gazebo files were useful to apply the plugins for all the robot components. 
+This file provided all the information about the ```my_robot``` structrure ```Links, joints,and physics properties``` for the gazebo environment. Additionally, the gazebo files were useful to apply the plugins for all the components of the robot. 
 
 ![](images/robot_model.png)
 
@@ -57,10 +59,12 @@ This client node will subscribe to the robot’s camera images and analyze each 
 ## Project Outcome
 The main objective of the project is to design a robot model from scratch and being able to follow a white ball in a Gazebo world. Please watch the video to see it in action: 
 
-## Problems during the project
--  Unable to control the four wheel car with the `differential_controller` . This was solved by adding `skid_steer_drive_controller` in the gazebo file.
+[GoChaseTheBallProject](https://youtu.be/GlAfpySXPgs)
 
-- The my_robot was not updated when changes were made in the `URDF file`. The cause of it was that the `world file` was saved including the my_robot model and when executed it completly ignored the new `URDF file`. This was solved by removing from the `world file` the my_robot model. 
+## Problems during the project
+-  Unable to control the four wheel car with the `differential_controller` . This was solved by replacing the previous controller with the `skid_steer_drive_controller` in the gazebo file.
+
+- The my_robot model was not updated when changes were made in the `URDF file`. The cause of it was that the `world file` was saved including the my_robot model and when executed it completly ignored the new `URDF file`. This was solved by removing from the `world file` the my_robot model. 
 
 ## Future Improvements
 - Apply object recognition to follow specific objects.
