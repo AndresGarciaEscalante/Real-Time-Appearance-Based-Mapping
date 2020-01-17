@@ -5,7 +5,7 @@
 ![](images/my_robot_Andres_Home.png)
 
 ## Setting up the enviroment:
-For this project used the following programs:
+For this project the following set up was used:
 - Ubuntu 16.04 LTS OS
 - Ros kinetic
 - Gazebo 7.0.0
