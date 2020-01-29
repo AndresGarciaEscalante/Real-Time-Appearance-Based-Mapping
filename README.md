@@ -61,6 +61,8 @@ This package generates a **.pgm** file of a gazebo world. Using this powerful to
 
 ![](images/map.png)
 
+By default, AMCL package will treat 'darker' pixels as obstacle in the pgm map file, and 'lighter' pixels as free space. The threshold could be set as a parameter which we will cover when we are building the launch file.
+
 For more detailed information please refere to the following link:
 [pgm_map_creator](https://github.com/udacity/pgm_map_creator.git)
 
@@ -69,6 +71,17 @@ Provides a control of the car by using keyboards.
 
 For more detailed information please refere to the following link:
 [teleop_twist_keyboard Package](https://github.com/ros-teleop/teleop_twist_keyboard)
+
+## Map Server Node
+The map_server node provides map data as a ROS service to other nodes such as the amcl node. Here, **map_server node** will **locate the map you created** in the Map Setup step and send it out as the map data.
+
+## AMCL Node
+It takes **odometry** and **laser scan** data to perform the AMCL localization.
+
+## Move Base Node 
+The move_base package is a very powerful tool. It utilizes a **costmap** - where each part of the map is divided into which area is occupied, like walls or obstacles, and which area is unoccupied. As the robot moves around, a **local costmap**, in relation to the **global costmap**, keeps getting updated allowing the package to define a continuous path for the robot to move along.
+
+What makes this package more remarkable is that it has some built-in corrective behaviors or maneuvers. Based on specific conditions, like detecting a particular obstacle or if the robot is stuck, it will navigate the robot around the obstacle or rotate the robot till it finds a clear path ahead
 
 ## Project Outcome
 The main objective of the project is to test the **AMCL** to determine the **position of the robot given a 2D map**.
