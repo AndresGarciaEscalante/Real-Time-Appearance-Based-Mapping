@@ -15,6 +15,15 @@
   <!-- If you choose to define initial pose here -->
   <param name="initial_pose_x" value="-3.0"/>
   <param name="initial_pose_y" value="-1.5"/>
+  
+  <!-- Number of particles available -->
+  <param name="min_particles"  value="100"/>
+  <param name="max_particles"  value="500"/>
+
+  <!-- Number of updates per Linear and angular movement -->
+  <param name="update_min_d"  value="0.1"/>
+  <param name="update_min_a"  value="0.025"/>
+  
 </node>
 
 <!-- Move Base -->
