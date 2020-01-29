@@ -58,6 +58,7 @@ Provides the gazebo world environment and the robot model.
 
 ### pgm_map_creator Package
 This package generates a **.pgm** file of a gazebo world. Using this powerful tool I was allowed to generate the folllowing 2D map:
+
 ![](images/map.png)
 
 For more detailed information please refere to the following link:
@@ -87,3 +88,6 @@ The main objective of the project is to test the **AMCL** to determine the **pos
 
 **Important:** Check full video in the following link:
 [AMCL_Teleop_Project](https://www.youtube.com/watch?v=mieZXECb5GY)
+
+## Future Improvements
+- Create a single launch file to execute the project.
