@@ -53,10 +53,10 @@ $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 - Using the third terminal you will be allowed to control the robot position with the keyboards.
 
 ## Project Description
-### my_robot Package
+### My_robot Package
 Provides the gazebo world environment and the robot model. 
 
-### pgm_map_creator Package
+### Pgm_map_creator Package
 This package generates a **.pgm** file of a gazebo world. Using this powerful tool I was allowed to generate the folllowing 2D map:
 
 ![](images/map.png)
@@ -66,19 +66,19 @@ By default, AMCL package will treat 'darker' pixels as obstacle in the pgm map f
 For more detailed information please refere to the following link:
 [pgm_map_creator](https://github.com/udacity/pgm_map_creator.git)
 
-### teleop_twist_keyboard Package (Teleop Branch)
+### Teleop_twist_keyboard Package (Teleop Branch)
 Provides a control of the car by using keyboards.
 
 For more detailed information please refere to the following link:
 [teleop_twist_keyboard Package](https://github.com/ros-teleop/teleop_twist_keyboard)
 
-## Map Server Node
+### Map Server Node
 The map_server node provides map data as a ROS service to other nodes such as the amcl node. Here, **map_server node** will **locate the map you created** in the Map Setup step and send it out as the map data.
 
-## AMCL Node
+### AMCL Node
 It takes **odometry** and **laser scan** data to perform the AMCL localization.
 
-## Move Base Node 
+### Move Base Node 
 The move_base package is a very powerful tool. It utilizes a **costmap** - where each part of the map is divided into which area is occupied, like walls or obstacles, and which area is unoccupied. As the robot moves around, a **local costmap**, in relation to the **global costmap**, keeps getting updated allowing the package to define a continuous path for the robot to move along.
 
 What makes this package more remarkable is that it has some built-in corrective behaviors or maneuvers. Based on specific conditions, like detecting a particular obstacle or if the robot is stuck, it will navigate the robot around the obstacle or rotate the robot till it finds a clear path ahead
