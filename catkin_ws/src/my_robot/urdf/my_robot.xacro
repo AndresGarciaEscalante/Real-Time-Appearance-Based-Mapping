@@ -71,6 +71,13 @@
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
+  
+  <!--Joint RGB-D camera-->
+  <joint name="camera_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
+    <parent link="camera_link"/>
+    <child link="camera_link_optical"/>
+  </joint>
 
   <!--Chasis model-->
   <link name='chassis'>
@@ -300,4 +307,7 @@
     </visual>
   </link>
 
+  <!--RGB-D camera link -->
+  <link name="camera_link_optical">
+  </link>
 </robot>
