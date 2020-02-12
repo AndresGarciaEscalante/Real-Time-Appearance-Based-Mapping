@@ -50,7 +50,7 @@ $ rtabmap-databaseViewer ~/.ros/rtabmap.db
 Contains the information of the **gazebo world environment**, **robot's URDF**. Additionally, it has all the launch files needed for the project.
 
 ### RTAB-Map Package
-RTAB-Map (Real-Time Appearance-Based Mapping) is a popular solution for SLAM to develop robots that can map environments in 3D. RTAB-Map has good speed and memory management, and it provides custom developed tools for information analysis. Most importantly, the quality of the documentation on ROS Wiki (http://wiki.ros.org/rtabmap_ros) is very high. 
+RTAB-Map (Real-Time Appearance-Based Mapping) is a popular solution for SLAM to develop robots that can map environments in 3D. RTAB-Map has good speed and memory management, and it provides custom developed tools for information analysis. 
 
 For more detailed information please refere to the following link:
 [RTAB-Map Package](http://wiki.ros.org/rtabmap_ros)
@@ -62,12 +62,12 @@ For more detailed information please refere to the following link:
 [ROS Teleop Package](https://github.com/ros-teleop/teleop_twist_keyboard)
 
 ## Project Outcome
-Create a **2D occupancy grid** and **3D octomap** from a simulated environment using your own robot with the RTAB-Map package. 
+Create a **2D occupancy grid** and **3D octomap** from a simulated environment using a robot with the RTAB-Map package. 
 
-The after the simulation the **db file** should look as follows. This example is provided in the repository:
+After the simulation the **db file** should look as follows. **This example is provided in the repository**:
 ![](images/dataviewer.png)
 
-**Important:** Check full video in the following link to get a deep understand of the project:
+**Important:** Check full video in the following link to get a deeper understand of the project:
 [RTAB-Map](https://www.youtube.com/watch?v=UjvRiylnfQM)
 
 ## Future Improvements
